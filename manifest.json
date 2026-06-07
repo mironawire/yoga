@@ -1,0 +1,9 @@
+
+{
+"name":"FlexFlow Yoga",
+"short_name":"FlexFlow",
+"start_url":"./",
+"display":"standalone",
+"background_color":"#ffffff",
+"theme_color":"#ffffff"
+}
