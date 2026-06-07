@@ -3,38 +3,38 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>FlexFlow Yoga</title>
-<link rel="manifest" href="manifest.json">
+<title>FlexFlow Yoga V2</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>FlexFlow Yoga</h1>
+<h1>FlexFlow Yoga V2</h1>
 
-<div class="card">
-<h2>Create Routine</h2>
-<input id="rname" placeholder="Routine name">
-<input id="pname" placeholder="Pose name">
-<input id="pdur" type="number" placeholder="Seconds">
+<div class="panel">
+<h2>Routine Builder</h2>
+<input id="routineName" placeholder="Routine Name">
+<input id="poseName" placeholder="Pose Name">
+<input id="poseDuration" type="number" placeholder="Seconds">
+<label><input type="checkbox" id="switchSides"> Switch sides halfway</label>
+<input id="poseImage" type="file" accept="image/*">
 <button onclick="addPose()">Add Pose</button>
 <button onclick="saveRoutine()">Save Routine</button>
 <ul id="poseList"></ul>
 </div>
 
-<div class="card">
-<h2>My Routines</h2>
+<div class="panel">
+<h2>Saved Routines</h2>
 <ul id="routineList"></ul>
 </div>
 
-<div class="card">
+<div class="panel">
 <h2>Player</h2>
+<img id="currentImage" style="max-width:300px;max-height:250px">
 <h3 id="currentPose">Ready</h3>
 <div id="timer">0</div>
 <button onclick="startRoutine()">Start</button>
-</div>
-
-<div class="card">
-<h2>Stats</h2>
-<p>Completed Sessions: <span id="sessions">0</span></p>
+<button onclick="pauseResume()">Pause/Resume</button>
+<button onclick="previousPose()">Back</button>
+<button onclick="nextPose()">Next</button>
 </div>
 
 <script src="app.js"></script>
