@@ -154,7 +154,7 @@ function playPose(){
 
    if(pose.switchSides && remaining===Math.floor(pose.duration/2)){
       beep();
-      alert('Switch sides');
+     // alert('Switch sides');
    }
 
    if(remaining<=5 && remaining>0){
